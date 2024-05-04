@@ -50,7 +50,7 @@ function App() {
         <footer className="footer">
           <div>
             Created By: {" "}
-            <a href="https://www.instagram.com/rupakrajput161/" target="_blank">Rupak Rajput</a>
+            <a href="https://www.instagram.com/rupakrajput161/" target="_blank" rel="noreferrer">Rupak Rajput</a>
           </div>
         </footer>
       </div>
