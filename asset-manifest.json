@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Rupakrajput19/text-converter/static/css/main.57021a86.css",
-    "main.js": "/Rupakrajput19/text-converter/static/js/main.6349bbfb.js",
-    "static/js/453.a87e8015.chunk.js": "/Rupakrajput19/text-converter/static/js/453.a87e8015.chunk.js",
-    "index.html": "/Rupakrajput19/text-converter/index.html",
-    "main.57021a86.css.map": "/Rupakrajput19/text-converter/static/css/main.57021a86.css.map",
-    "main.6349bbfb.js.map": "/Rupakrajput19/text-converter/static/js/main.6349bbfb.js.map",
-    "453.a87e8015.chunk.js.map": "/Rupakrajput19/text-converter/static/js/453.a87e8015.chunk.js.map"
+    "main.css": "/text-converter/static/css/main.57021a86.css",
+    "main.js": "/text-converter/static/js/main.f0664e20.js",
+    "static/js/453.a87e8015.chunk.js": "/text-converter/static/js/453.a87e8015.chunk.js",
+    "index.html": "/text-converter/index.html",
+    "main.57021a86.css.map": "/text-converter/static/css/main.57021a86.css.map",
+    "main.f0664e20.js.map": "/text-converter/static/js/main.f0664e20.js.map",
+    "453.a87e8015.chunk.js.map": "/text-converter/static/js/453.a87e8015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57021a86.css",
-    "static/js/main.6349bbfb.js"
+    "static/js/main.f0664e20.js"
   ]
 }
