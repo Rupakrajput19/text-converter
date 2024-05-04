@@ -1,0 +1,121 @@
+*, body{
+  margin: 0;
+  padding: 0;
+}
+/* Dark mode styles */
+.dark-mode {
+  height: 85vh;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+.App-header{
+  display: flex;
+  flex-direction:row;
+  text-align:center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.App-header img {
+  height: 100px;
+  width: 100px;
+  margin: 2px;
+  cursor: pointer;
+  pointer-events: none;
+  mix-blend-mode: hard-light;
+} 
+
+.App-header h3 {
+  margin: 25px;
+  text-align: center;
+  font-size: xx-large;
+  font-family: cursive;
+}
+
+#darkmode-btn{
+position: fixed;
+right: 50px;
+}
+
+.main-box{  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textarea_field{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 50px;
+}
+
+.input_field{
+  width: 60vw;
+}
+
+.button_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.button_box button{
+  margin: 25px 10px;
+  text-transform: none;
+}
+
+.footer{
+  position: fixed;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  margin: 10px auto;
+  color: black;
+}
+
+.footer a {
+  color: rgb(111, 111, 245);  
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 500px)  {
+  .App-header{
+    padding: 0;
+  }
+  .App-header img {
+    height: 80px;
+    width: 80px;
+  } 
+  .App-header h3 {
+    margin: 10px;
+    font-size: 30px;
+  }
+  .input_field{
+    width: 90vw;
+  }
+  .button_box button{
+    margin: 10px 10px;
+    font-size: medium;
+  }
+  #darkmode-btn{
+  right: 10px;
+  }
+}
