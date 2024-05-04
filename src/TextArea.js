@@ -77,10 +77,13 @@ const onFieldChange = (e) => {
             "& .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused": {
               color: textColor,
             },
-            "& .css-1ald77x": { //for live site classes because it was not working.
+            "& .css-1ald77x": { //for live site classes because it was not working, for text field label color that outside the box
               color: textColor,
             },
             "& .css-1ald77x.Mui-focused": {
+              color: textColor,
+            },
+            "& .css-p0rm37": { //for text field label color that inside the box
               color: textColor,
             },
             "& .MuiOutlinedInput-root": {
