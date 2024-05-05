@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { Box, TextField, Button } from "@mui/material";
 
-export default function TextArea({ darkMode }) {
+export default function TextArea({ darkMode, textColor, reverseColor }) {
   const [textValue, setTextValue] = useState("");
   const [words, setWords] = useState(0);
   const [canShow, setCanShow] = useState(false);
@@ -37,6 +37,7 @@ const onFieldChange = (e) => {
         break;
       case "capitalize":
         newValue = textValue.replace(/\b\w/g, c => c.toUpperCase());
+        // newValue = textValue.charAt(0).toUpperCase() + textValue.slice(1).toLowerCase();
         break;
       case "words":
         const wordsCount = textValue.split(/\s+/).filter((word) => word !== "").length;
@@ -50,8 +51,6 @@ const onFieldChange = (e) => {
     }
     setTextValue(newValue);
   };
-
-  const textColor = darkMode ? "#fff" : "#2e2e2e";
   
   return (
     <>
@@ -112,6 +111,7 @@ const onFieldChange = (e) => {
           variant="contained"
           id="capitalize_btn"
           onClick={() => OnClickBtn("capitalize")}
+          style={{ color: reverseColor }}
         >
           Capitalize
         </Button>
@@ -119,6 +119,7 @@ const onFieldChange = (e) => {
           variant="contained"
           id="upper_btn"
           onClick={() => OnClickBtn("upper")}
+          style={{ color: reverseColor }}
         >
           Upper
         </Button>
@@ -126,6 +127,7 @@ const onFieldChange = (e) => {
           variant="contained"
           id="lower_btn"
           onClick={() => OnClickBtn("lower")}
+          style={{ color: reverseColor }}
         >
           Lower
         </Button>
@@ -133,10 +135,13 @@ const onFieldChange = (e) => {
           variant="contained"
           id="words_btn"
           onClick={() => OnClickBtn("words")}
+          style={{ color: reverseColor }}
         >
           No. of Words
         </Button>
-        <Button variant="contained" id="clear_btn" onClick={OnClickBtn}>
+        <Button variant="contained" id="clear_btn" onClick={OnClickBtn} 
+          style={{ color: reverseColor }}
+        >
           Clear
         </Button>
       </Box>

@@ -23,6 +23,8 @@ function App() {
   }, [darkMode]);
   
   const bodyClass = darkMode ? "dark-mode" : "light-mode";
+  const textColor = darkMode ? "#fff" : "#2e2e2e";
+  const reverseColor = darkMode ? "#2e2e2e" : "#fff";
 
   return (
     <>
@@ -30,11 +32,12 @@ function App() {
         <header className="App-header">
           <Toolbar>
             <img src={applogo} alt="Logo" />
-            <h3>Text-Converter</h3>
+            <h3 style={{ color: reverseColor }}>Text-Converter</h3>
             <IconButton
               id="darkmode-btn"
               color="inherit"
               onClick={handleModeToggle}
+              style={{ color: reverseColor }}
             >
               {darkMode ? <DarkModeIcon /> : <LightModeIcon />}
             </IconButton>
@@ -44,11 +47,11 @@ function App() {
       <div className={bodyClass}>
         <Container maxWidth="md">
           <main className="main-box">
-            <TextArea darkMode={darkMode}/>
+            <TextArea darkMode={darkMode} textColor={textColor} reverseColor={reverseColor}/>
           </main>
         </Container>
         <footer className="footer">
-          <div>
+          <div style={{ color: textColor }}>
             Created By: {" "}
             <a href="https://www.instagram.com/rupakrajput161/" target="_blank" rel="noreferrer">Rupak Rajput</a>
           </div>
